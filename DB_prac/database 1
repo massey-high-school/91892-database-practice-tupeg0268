@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<?php
+
+    session_start(); //to allow variables transfer between page
+    include("config.php");
+    
+    // connect to database...
+    $dp connect=mysqli_connect(DB_Host, DB_Username, DB_Password, DB_Name);
+    
+    if (mysqli_connect_errorno()){
+    echo "connection failed:" .mysqli_connect_error();
+    exits;
+    {
+    
+    ?>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name= "description" content="games, apps, ">
+        <meta name="author" content=" Genevieve Tupe">
+        <meta name="keywords" content="game, app,rating"
+        
+        <title>Game Database</title>
+        
+        
+        
+        
+        
+        
+        
+        
+</head>
+
+<body>
+
+  <p class="message">Eek! Your browser does not support grid. Please upgrade your system. </p>
+  
+    <div class="wrapper">
+    
+    <!-- logo/ small image goes here -->
+    <div class="box logo">
+    <a href="index.php">< img src="images/logo.png" width="261" height ="150" alt="dice"/></a>
+    </div> <!-- / logo -->
+    
+    <div="box banner">
+        <h1>Game Database</h1>
+        </div <!--/ banner-->
+        
+        
+        <div="box main">
+        <h2>Welcome</h2>
